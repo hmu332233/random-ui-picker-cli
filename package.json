@@ -1,6 +1,6 @@
 {
   "name": "random-ui-picker-cli",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "index.js",
   "repository": "https://github.com/hmu332233/random-ui-picker-cli.git",
   "author": "minung.han <hmu332233@gmail.com>",

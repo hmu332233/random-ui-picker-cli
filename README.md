@@ -2,13 +2,14 @@
 
 This is a CLI that selects a random item with a simple UI.
 
-
 ## Usage
 
 ```
-$ npx random-ui-picker -i item1 item2 item3
+$ npx random-ui-picker-cli -i item1 item2 item3
+$ npx random-ui-picker-cli -if items_file_path
 // or
-$ npx random-ui-picker -if items_file_path
+$ random-ui-picker -i item1 item2 item3
+$ random-ui-picker -if items_file_path
 ```
 ```
 Usage: random-ui-picker
