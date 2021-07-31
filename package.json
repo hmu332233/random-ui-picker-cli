@@ -10,6 +10,7 @@
   },
   "preferGlobal": true,
   "scripts": {
+    "prestart": "yarn build",
     "start": "./bin/run",
     "prebuild": "rm -rf lib",
     "build": "tsc -b"
