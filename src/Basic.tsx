@@ -15,17 +15,15 @@ const getNextIndex = (length: number, current: number, addend: number): number =
   return current + addend;
 };
 
-type RandomPickerProps = {
-  items: Array<number | string>;
-};
-function RandomPicker({ items }: RandomPickerProps) {
+
+function Basic({ items }: PickerProps) {
   const [currentIndex, setCurrentIndex] = useState(Math.floor(Math.random() * items.length - 1));
   useEffect(() => {
     let time = 0;
     const timer = setInterval(() => {
       setCurrentIndex((v) => (v + 1) % items.length);
 
-      if (time++ === 15) {
+      if (time++ === 25) {
         clearInterval(timer);
       }
     }, 150);
@@ -54,4 +52,4 @@ function RandomPicker({ items }: RandomPickerProps) {
   );
 }
 
-export default RandomPicker;
+export default Basic;
