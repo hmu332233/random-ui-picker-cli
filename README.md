@@ -25,11 +25,17 @@ Options:
 
 - **Basic**
 
+![basic theme](./assets/images/theme.basic.gif)
+
 ## Contribute
 
 Please make another theme!  
 Other contributions are also welcome.
 
 ## How to add a theme
-1. Add a new theme component to the src directory. (Component props must have PickerProps type)
-2. Add Component with key value to ThemeMap of `src/index.tsx`.
+1. Add a new theme component to the `src` directory. (Component props must have PickerProps type)
+2. Add Component with key value to **ThemeMap** in `src/index.tsx`.
+3. Enter the following in the terminal.
+```
+$ yarn start -t [new theme name] -i item1 item2 item3
+```
