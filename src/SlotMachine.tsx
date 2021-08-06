@@ -26,14 +26,12 @@ function SlotMachine({ items }: PickerProps) {
   const lastIndex = getNextIndex(items.length, currentIndex, 2);
 
   return (
-    <Box width={SLOT_MACHINE_WIDTH} flexDirection="column" alignItems="center">
+    <Box width={SLOT_MACHINE_WIDTH} flexDirection="column" alignItems="center" paddingTop={2} paddingBottom={2}>
       <Text color="gray">{items[firstIndex]}</Text>
       <Text color="gray">{items[prevIndex]}</Text>
-      <Text color="gray">{"-".repeat(SLOT_MACHINE_WIDTH)}</Text>
-      <Box justifyContent="center">
+      <Box justifyContent="center" width="100%" borderStyle="round">
         <Text color="white">{items[currentIndex]}</Text>
       </Box>
-      <Text color="gray">{"-".repeat(SLOT_MACHINE_WIDTH)}</Text>
       <Text color="gray">{items[nextIndex]}</Text>
       <Text color="gray">{items[lastIndex]}</Text>
     </Box>
