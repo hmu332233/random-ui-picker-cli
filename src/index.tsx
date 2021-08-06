@@ -1,5 +1,7 @@
 import React from 'react';
 import Basic from './Basic';
+import SlotMachine from './SlotMachine';
+
 import { render } from 'ink';
 
 import { Command } from 'commander';
@@ -8,6 +10,7 @@ import * as fs from 'fs';
 
 const ThemeMap: PickerThemeMap = {
   basic: Basic,
+  'slot-machine': SlotMachine,
 };
 
 const program = new Command();
