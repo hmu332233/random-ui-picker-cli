@@ -27,6 +27,10 @@ Options:
 
 ![basic theme](./assets/images/theme.basic.gif)
 
+- **Slot Machine**
+
+![slot machine theme](./assets/images/theme.slot-machine.gif)
+
 ## Contribute
 
 Please make another theme!  
