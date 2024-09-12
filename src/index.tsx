@@ -16,8 +16,8 @@ const ThemeMap: PickerThemeMap = {
 const program = new Command();
 
 program
+  .requiredOption('-i --items <items...>', 'items')
   .option('-t --theme <theme>', 'theme, [default: basic]')
-  .option('-i --items <items...>', 'items')
   .option('-if --items_file <path>', 'items\'s file path')
   .action(({ theme = 'basic', items, items_file }) => {
     
